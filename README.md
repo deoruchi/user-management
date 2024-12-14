@@ -65,6 +65,8 @@ To set up this project on your local machine, follow these steps:
 
 ## Demo Video
 
+![Video]("https://1drv.ms/v/c/087c53e29c4abf4c/EZVElR_DQatIquZMuNWybHsBYo2zWA7zt7j25MAepgURcw?e=8U0eTT")
+
 ## API Used
 
 The project makes use of the following API to fetch and manipulate user data:
