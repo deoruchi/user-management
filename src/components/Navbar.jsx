@@ -1,8 +1,16 @@
 import React from "react";
 import { useAuth } from "../context/login-context.jsx";
+import { useNavigate } from "react-router";
 
 export const Navbar = () => {
-  const { login } = useAuth();
+  const { login, setUserLogin } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    sessionStorage.removeItem("token");
+    setUserLogin(false);
+    navigate("/login");
+  };
 
   return (
     <div className="navbar bg-base-100 shadow-md">
@@ -24,6 +32,14 @@ export const Navbar = () => {
                 />
               </div>
             </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a onClick={handleLogout}>Logout</a>
+              </li>
+            </ul>
           </div>
         ) : null}
       </div>
