@@ -72,3 +72,4 @@ The project makes use of the following API to fetch and manipulate user data:
 - **DELETE**: `https://reqres.in/api/users/{id}` - Deletes a user by their ID.
 
 ## Links
+![site](https://deoruchi.github.io/user-management/#/login)
