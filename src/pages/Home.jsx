@@ -11,8 +11,9 @@ export const Home = () => {
     if (!isLogin) {
       setUserLogin(false);
       navigate("/login");
+    } else {
+      setUserLogin(true);
     }
-    setUserLogin(true);
   }, [navigate]);
 
   return (
